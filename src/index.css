@@ -1,10 +1,58 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0 auto;
+
 }
 
 div {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;
+  display: grid;
+  grid-template-columns: 50% 100% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 12px;
+}
+
+#livingRoom {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BDB76B;
+}
+
+#bedroom {
+  background-color: lightgreen;
+  border: solid darkgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#MasterBedroom {
+
+}
+
+#kitchen {
+  grid-area: 1 / 3 / 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: pink;
+}
+
+#kitchen > h1 {
+  grid-column: 1 / 3;
+}
+
+.kitchenItem {
+  grid-area: 1;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+#oven {
+  background-color: #9370DB;
 }

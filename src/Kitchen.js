@@ -3,7 +3,7 @@ import Sink from "./Sink";
 
 export default function Kitchen(props) {
   return (
-    <div>
+    <div id="kitchen">
       <h1>Kitchen</h1>
       <Oven />
       <Sink />
