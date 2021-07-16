@@ -2,38 +2,41 @@
   font-family: sans-serif;
   text-align: center;
   margin: 0 auto;
-
+  height: 500px;
 }
 
 div {
   display: grid;
-  grid-template-columns: 50% 100% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 55% 40% 30% 50%;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
   font-size: 12px;
 }
 
 #livingRoom {
-  grid-area: 1 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 4 / 4;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #BDB76B;
 }
 
-#bedroom {
+.bedroom {
   background-color: lightgreen;
-  border: solid darkgreen;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#MasterBedroom {
+#Bedroom2 {
+ grid-area: 3 / 1 / 5 / 2;
+}
 
+#Bedroom3 {
+ grid-area: 4 / 3 / 5 / 5;
 }
 
 #kitchen {
-  grid-area: 1 / 3 / 3 / 4;
+  grid-area: 1 / 4 / 4 / 5;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -55,4 +58,11 @@ div {
 
 #oven {
   background-color: #9370DB;
+}
+
+.bath {
+   background-color: #ADD8E6;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

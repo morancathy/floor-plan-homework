@@ -5,7 +5,7 @@ import Bedroom from "./Bedroom";
 import Bath from "./Bath";
 
 export default function FloorPlan() {
-  const numBedroom = ["Master Bedroom", "Guest Bedroom", "Pet Bedroom"];
+  const numBedroom = ["Bedroom1", "Bedroom2", "Bedroom3"];
   const bathSize = ["Half Bath", "Full Bath"];
 
   return (

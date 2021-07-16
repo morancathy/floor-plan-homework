@@ -5,7 +5,7 @@ export default function Bedroom(props) {
     <>
       {props.num.numBedroom.map((thing) => {
         return (
-          <div id="bedroom">
+          <div className="bedroom" id={`${thing}`}>
             <h1>{thing}</h1>
           </div>
         );
